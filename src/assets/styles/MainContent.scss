@@ -1,0 +1,30 @@
+@import './vars.scss';
+
+.main {
+  height: 100%;
+}
+
+.main_menu {
+  background-color: transparent;
+  height: 100%;
+}
+
+.main_sider {
+  @include themify() {
+    background-color: themed('main-secondary-bg');
+    transition: 0.3s;
+  }
+}
+
+.ant-layout-sider-trigger {
+  @include themify() {
+    background-color: themed('main-secondary-bg');
+    color: themed('text-color');
+    transition: 0.3s;
+  }
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.main_content {
+  background-color: white;
+}

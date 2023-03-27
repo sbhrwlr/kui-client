@@ -1,0 +1,66 @@
+@import './vars.scss';
+
+.introc {
+  @include themify() {
+    background-color: themed('main-bg');
+    transition: 0.3s;
+  }
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.introc__content {
+  padding: 25px;
+  margin-left: 30px;
+}
+
+.introc__content__text-main {
+  @include themify() {
+    color: themed('text-color');
+    transition: 0.3s;
+  }
+  text-align: left;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 99px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+.introc__content__text-main-highlighted {
+  background: linear-gradient(
+    180deg,
+    #2673f6 55.73%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+
+.introc__content > Button {
+  margin-top: 20px;
+}
+
+.introc__vector {
+  height: 800px;
+  width: 800px;
+}
+
+.ant-modal {
+  @include themify() {
+    background-color: themed('main-bg');
+    transition: 0.3s;
+  }
+}
+
+.ant-modal-content {
+  background-color: red;
+  color: olive;
+}

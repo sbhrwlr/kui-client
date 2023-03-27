@@ -1,0 +1,56 @@
+@import './vars.scss';
+
+.sb {
+  @include themify() {
+    background-color: themed('main-bg');
+    transition: 0.3s;
+  }
+  height: 100%;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sb__logo {
+  margin: 15px 5px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sb__logo:hover {
+  width: 48px;
+  height: 48px;
+  transition: 0.3s;
+}
+
+.sb__menu {
+  margin: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.sb__menu__icon {
+  @include themify() {
+    background-color: themed('main-bg');
+    transition: 0.3s;
+  }
+  transition: 0.3s;
+  color: #4b5971;
+  height: 28px;
+  width: 28px;
+  margin-top: 25px;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.sb__menu__icon > path {
+  transition: 0.3s;
+}

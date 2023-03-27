@@ -1,0 +1,95 @@
+{
+  "name": "kui-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/dark-theme": "^2.0.2",
+    "@ant-design/icons": "^5.0.1",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.5",
+    "@mantine/core": "^6.0.4",
+    "@mantine/form": "^6.0.4",
+    "@mantine/hooks": "^6.0.4",
+    "@material-tailwind/react": "^1.4.2",
+    "@supabase/supabase-js": "^2.5.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "antd": "^5.2.0",
+    "axios": "^1.2.5",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^3.2.7",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "framer-motion": "^9.0.1",
+    "humanize-number": "0.0.2",
+    "husky": "^8.0.3",
+    "moment": "^2.29.4",
+    "password-validator": "^5.3.0",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "react-secure-storage": "^1.0.22",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "sequelize": "^6.28.0",
+    "string-validator": "^1.0.5",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .tsx,.ts src/",
+    "lint:fix": "eslint --ext .tsx,.ts src/ --fix",
+    "lint:CI": "eslint --ext .tsx,.ts src/ --max-warnings=0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-redux": "^7.1.25",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint-plugin-react": "^7.32.1",
+    "prettier": "2.8.3",
+    "sass": "^1.57.1"
+  }
+}

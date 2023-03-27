@@ -1,0 +1,11 @@
+@import './vars.scss';
+
+.root_container {
+  @include themify() {
+    background-color: themed('main-bg');
+    transition: 0.3s;
+  }
+  flex-grow: 1;
+  display: flex;
+  width: 60%;
+}

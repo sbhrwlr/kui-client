@@ -1,0 +1,24 @@
+@import './assets/styles/vars.scss';
+
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+}
+
+.divider{
+  color: red;
+}
+
+.primary_button{
+  background-color: $primary;
+}
+.primary_button :hover {
+
+}

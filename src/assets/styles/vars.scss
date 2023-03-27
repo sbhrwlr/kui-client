@@ -1,0 +1,56 @@
+$themes: (
+  light: (
+    'text': #f4f5f7,
+  ),
+  dark: (
+    'bg': #f4f5f7,
+  ),
+);
+
+$sidebar: #161819;
+
+$light-text-color: #f4f5f7;
+$dark-text-color: #161819;
+$bg-light: #f4f5f7;
+$bg-dark: #161819;
+$primary: #2673f6;
+$bg-light-dark: #242728;
+$bg-deep-white: #f0f1f2;
+
+// theme-config.scss
+$themes: (
+  light: (
+    main-bg: $bg-light,
+    main-secondary-bg: $bg-deep-white,
+    text-color: $dark-text-color,
+  ),
+  dark: (
+    main-bg: $bg-dark,
+    main-secondary-bg: $bg-light-dark,
+    text-color: $light-text-color,
+  ),
+);
+
+// mixin.scss
+@mixin themify() {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

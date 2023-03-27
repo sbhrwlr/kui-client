@@ -1,0 +1,15 @@
+@import './vars.scss';
+
+.content-viewer-root {
+  @include themify() {
+    background-color: themed('main-bg');
+    color: themed('text-color');
+  }
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  transition: 0.3s;
+}

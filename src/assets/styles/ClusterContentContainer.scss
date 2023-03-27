@@ -1,0 +1,18 @@
+@import './vars.scss';
+
+.clusters_content {
+  @include themify() {
+    background-color: themed('main-bg');
+    color: themed('text-color');
+    transition: 0.3s;
+  }
+  height: 100%;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.clusters_content_heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
